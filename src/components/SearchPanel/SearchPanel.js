@@ -1,3 +1,4 @@
+// import styles from './SearchPanel.css';
 import './SearchPanel.css';
 import React from "react";
 

@@ -1,14 +1,16 @@
+// import styles from './PostAddForm.css';
 import './PostAddForm.css';
 import React from "react";
 
 
-const PostAddForm = () => {
+const PostAddForm = ({onAdd}) => {
     return (
-        <form className='bottom-panel d-flex'>
+        <div className='bottom-panel d-flex'>
             <input className='form-control new-post-label'
                    type="text" placeholder='О чем думаешь?'/>
-            <button className='btn btn-outline-secondary' type='submit'>Добавить</button>
-        </form>
+            <button className='btn btn-outline-secondary' type='submit'
+            onClick={()=> onAdd('csscascascascasc')}>Добавить</button>
+        </div>
     )
 }
 
